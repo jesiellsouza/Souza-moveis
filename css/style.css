@@ -66,10 +66,58 @@ body {
 
 /*inicio-loja*/
 .loja-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
     width: 100%;
-    height: 100vh;
-    border: 2px solid black;
+    padding: 25px 10px;
+    overflow: auto;
+    margin: 15px 0;
 }
+
+.card-loja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-loja img {
+    display: flex;
+    object-fit: contain;
+    width: 250px;
+    height: 250px;
+    transition: 0.4s;
+}
+
+.card-loja img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.card-loja p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.card-loja button {
+    font-family: 'Roboto',sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: #024959;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: 0.4s;
+}
+
+.card-loja button:hover {
+    cursor: pointer;
+    background-color: #022830;
+}
+
 /*final-loja/*
 
 /*inicio-sobre*/
